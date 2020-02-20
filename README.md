@@ -15,11 +15,15 @@ On select it returns a Gif object in the format specified for an image from Giph
 ## Usage basic
 
 ```jsx
-import Picker from "react-giphy-picker";
+import Picker from "react-giphy-picker-advanced";
 import ReactDOM from "react-dom";
 import React, { Component, PropTypes } from "react";
 
 class TestComponent extends Component {
+  this.state = {
+    visible: false
+  }
+
   log(gif) {
     console.log(gif);
   }
@@ -27,7 +31,12 @@ class TestComponent extends Component {
   render() {
     return (
       <div>
-        <Picker onSelected={this.log.bind(this)} />
+         <Picker
+            onSelected={this.log.bind(this)}
+            visible={visible}
+            modal={true}
+            handleClose={() => this.setState({ visible: false })}
+          />
       </div>
     );
   }
