@@ -1,6 +1,6 @@
 {
   "name": "react-giphy-picker-advanced",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react gif picker using giphy API",
   "main": "lib/Picker.js",
   "author": "Mike Doubintchik <mike.doubintchik@gmail.com>",
